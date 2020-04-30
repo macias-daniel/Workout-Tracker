@@ -14,13 +14,13 @@ router.post("/api/workouts", (req, res) => {
 // Respond with workout for id url parameter. This should
 // respond with the updated workout json
 router.put("/api/workouts/:id", (req, res) => {
-  // CODE HERE
   const workoutToUpdate = (req.params.id)
-  db.Workout.where({ _id: workoutToUpdate }).update({ exercises: req.body })
+  db.Workout.update({ _id: workoutToUpdate }, { $set: { exercises: req.body } })
     .then(response => {
-      console.log(response)
+      res.json(response)
     }).catch(err => {
       console.log(err)
+      res.sendStatus(err)
     })
 });
 
