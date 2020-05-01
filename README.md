@@ -1,6 +1,6 @@
 # Workout-Tracker
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)]
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 
 ## Description
 
@@ -9,8 +9,6 @@ Track your fitness. Add your fitness workout routine and track your progress thr
 ## Table Of Contents
 
 - [Installation](#Installation)
-
-* [License](#License)
 
 * [Contributing](#Contributing)
 
